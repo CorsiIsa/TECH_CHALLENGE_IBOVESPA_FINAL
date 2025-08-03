@@ -18,6 +18,10 @@ Desenvolver um modelo com acurácia mínima de **75%** no conjunto de teste, uti
 Os dados utilizados são históricos diários do IBOVESPA e foram obtidos no site:  
 🔗 [Investing.com - IBOVESPA Historical Data](https://br.investing.com/indices/bovespa-historical-data)
 
+- Período: diário
+- Intervalo utilizado: mais de 25 anos
+- Últimos 30 dias reservados como conjunto de teste
+  
 ---
 
 ## 🧪 Metodologia
@@ -35,31 +39,40 @@ Abaixo está o resumo técnico do projeto:
   - Tendência do dia anterior
   - Volume de negociação
 
-### 🔹 Preparação dos Dados
-- Definição do target como:
-  - `1` se o fechamento do dia seguinte for maior que o atual
+### 🔹 Pré-processamento
+- Conversão de datas e ordenação crescente
+- Cálculo dos retornos percentuais: `ret_1d`, `ret_3d`, `ret_5d`
+- Cálculo das médias móveis: `sma_3`, `sma_7`
+- Geração da variável `target` binária:
+  - `1` se o fechamento do próximo dia for maior
   - `0` caso contrário
-- Criação de janelas temporais respeitando a ordem cronológica (sem fuga de dados)
 
-### 🔹 Modelagem
-- Modelos testados:
-  - Regressão Logística
-  - Random Forest
-  - XGBoost (modelo final escolhido)
-- Validação com dados dos últimos **30 dias**
+### 🔹 Modelos Treinados
+- **Regressão Logística**
+- **Random Forest**
+- **XGBoost** (modelo escolhido)
 
-### 🔹 Métricas e Resultados
-- Acurácia no conjunto de teste: **>75%**
-- Matriz de confusão e outras métricas apresentadas na entrega
+Todos os modelos foram avaliados com base em:
+- Acurácia
+- Precisão
+- Recall
+- F1-Score
+- Matriz de confusão
+
+### 🔹 Resultados
+- O modelo **XGBoost** atingiu acurácia **superior a 75%** no conjunto de teste.
+- Atributos mais relevantes: `ret_1d`, `sma_3`, `ret_3d`, `ret_5d`.
 
 ---
 
 ## 🛠️ Tecnologias Utilizadas
 
-- Python (Pandas, Scikit-learn, XGBoost)
-- Jupyter Notebook / Google Colab
-- Matplotlib / Seaborn
-- VS Code
+- Python
+- Pandas, NumPy
+- Scikit-learn
+- XGBoost
+- Matplotlib, Seaborn
+- Jupyter Notebook
 
 ---
 
@@ -82,4 +95,5 @@ Abaixo está o resumo técnico do projeto:
 **Fase:** 02  
 
 ---
+
 
