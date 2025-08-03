@@ -91,9 +91,11 @@ Todos os modelos foram avaliados com base em:
 * Jamile Ribeiro
 * Larissa Souza
 * Mariana Caldas
-**Curso:** Pós-graduação em Data Analytics – FIAP  
+  
+---
+##Curso: Pós-graduação em Data Analytics – FIAP  
+
 **Fase:** 02  
 
----
 
 
