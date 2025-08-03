@@ -93,9 +93,10 @@ Todos os modelos foram avaliados com base em:
 * Mariana Caldas
   
 ---
-##Curso: Pós-graduação em Data Analytics – FIAP  
+## Curso: Pós-graduação em Data Analytics – FIAP  
 
 **Fase:** 02  
+
 
 
 
