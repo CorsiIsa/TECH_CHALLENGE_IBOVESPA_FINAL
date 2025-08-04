@@ -15,8 +15,8 @@ Desenvolver um modelo com acurácia mínima de **75%** no conjunto de teste, uti
 
 ## 📊 Fonte dos Dados
 
-Os dados utilizados são históricos diários do IBOVESPA e foram obtidos no site:  
-🔗 [Investing.com - IBOVESPA Historical Data](https://br.investing.com/indices/bovespa-historical-data)
+Os dados utilizados são históricos diários do IBOVESPA e foram obtidos através da biblioteca Yfinance:  
+'''yf.download('^BVSP', period='25y', interval='1d')'''
 
 - Período: diário
 - Intervalo utilizado: mais de 25 anos
@@ -96,6 +96,7 @@ Todos os modelos foram avaliados com base em:
 ## Curso: Pós-graduação em Data Analytics – FIAP  
 
 **Fase:** 02  
+
 
 
 
