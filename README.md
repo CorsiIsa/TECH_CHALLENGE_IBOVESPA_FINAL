@@ -49,7 +49,6 @@ Abaixo está o resumo técnico do projeto:
 
 ### 🔹 Modelos Treinados
 - **Regressão Logística**
-- **Random Forest**
 - **XGBoost** (modelo escolhido)
 
 Todos os modelos foram avaliados com base em:
@@ -96,6 +95,7 @@ Todos os modelos foram avaliados com base em:
 ## Curso: Pós-graduação em Data Analytics – FIAP  
 
 **Fase:** 02  
+
 
 
 
