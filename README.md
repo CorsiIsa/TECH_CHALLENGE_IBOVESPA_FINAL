@@ -53,8 +53,6 @@ Abaixo está o resumo técnico do projeto:
 
 Todos os modelos foram avaliados com base em:
 - Acurácia
-- Precisão
-- Recall
 - F1-Score
 - Matriz de confusão
 
@@ -95,6 +93,7 @@ Todos os modelos foram avaliados com base em:
 ## Curso: Pós-graduação em Data Analytics – FIAP  
 
 **Fase:** 02  
+
 
 
 
